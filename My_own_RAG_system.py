@@ -18,8 +18,8 @@ import os
 
 os.environ['LANGCHAIN_TRACING_V2'] = 'true'
 os.environ['LANGCHAIN_ENDPOINT'] = 'https://api.smith.langchain.com'
-os.environ['LANGCHAIN_API_KEY'] = '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'
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['LANGCHAIN_API_KEY'] = 'your-key'
+os.environ['OPENAI_API_KEY'] = 'your-key'
 
 def extract_text_from_docx(file_path):
     doc = Document(file_path)
