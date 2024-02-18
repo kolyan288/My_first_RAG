@@ -73,7 +73,7 @@ def delete_word(event):
 
 def generate_answer():
     answer_entry.configure(state = 'normal')
-    question = prompt_entry.get()
+    question = prompt_entry.get("1.0", tk.END)
     answer = rag_chain.invoke(question)
     answer_entry.delete('1.0', tk.END) 
     answer_entry.insert(tk.END, answer)
